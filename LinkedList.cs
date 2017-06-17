@@ -9,17 +9,19 @@ namespace CustomerLinkedListApp
 {
     class LinkedList
     {
-        private Node topnode;
+        private Node firstnode;
+        private Node lastnode;
 
         public LinkedList()
         {
-            topnode = null;
+            firstnode = null;
+            lastnode = null;
         }
         public int CreateLinkedList()
         {
             int i = 0;
 
-            var db = File.ReadAllLines("customerdb.txt").Reverse();
+            var db = File.ReadAllLines("customerdb.txt");
               
             foreach(string line in db )
             {
@@ -36,21 +38,25 @@ namespace CustomerLinkedListApp
             custobj.PurchDate = splits[5];
             custobj.TotalPurch = Convert.ToDouble(splits[6]);
                     
-            PushToList(custobj);
+            AddToEndList(custobj);
             i++;
             }
             return i;        
         }
-        public void PushToList(Customer data)
+        public void AddToEndList(Customer data)
         {
             Node newnode = new Node(data);
 
-            newnode.handle = topnode;
-            topnode = newnode;
+            if(firstnode == null)
+            
+                firstnode = newnode;
+            else
+                lastnode.handle = newnode;
+                lastnode = newnode;
         }
         public void DisplayList()
         {
-            Node n = topnode;
+            Node n = firstnode;
 
             while(n != null)
             {
@@ -64,7 +70,7 @@ namespace CustomerLinkedListApp
             using(var fs = new FileStream("customerdb.txt", FileMode.Truncate, FileAccess.Write))
             using (var sw = new System.IO.StreamWriter(fs))
             {
-                Node n = topnode;
+                Node n = firstnode;
 
                 while(n != null)
                 {
@@ -84,7 +90,7 @@ namespace CustomerLinkedListApp
         public void SearchList(string x)
         {
             int count = 0;
-            Node n = topnode;
+            Node n = firstnode;
 
             while(n != null)
             {
@@ -125,19 +131,19 @@ namespace CustomerLinkedListApp
                 custobj.TotalPurch = 0;
                 custobj.PurchDate = "N/A";
 
-                PushToList(custobj);
+                AddToEndList(custobj);
         }
-        public void PopCust()
+        public void DeleteStartList()
         {
                 Customer custobj = new Customer();
 
-                if(topnode == null)
+                if(firstnode == null)
                 {
                     Console.WriteLine("No customers!");
                     return;
                 }
-                custobj = topnode.info;
-                topnode = topnode.handle;
+                custobj = firstnode.info;
+                firstnode = firstnode.handle;
         }
         public void UpdateCust(int x)
         {
@@ -147,7 +153,7 @@ namespace CustomerLinkedListApp
             Console.WriteLine("Please enter a purchase amount to be added to total:");
             double amount = Validation.DoubleInput();
 
-            Node n = topnode;
+            Node n = firstnode;
 
             while(n != null)
             {

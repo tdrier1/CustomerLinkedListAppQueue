@@ -20,7 +20,7 @@ namespace CustomerLinkedListApp
             Console.WriteLine("1: View Customer List in Order Added");
             Console.WriteLine("2: Search By Company Name");
             Console.WriteLine("3: Add A Customer to List");
-            Console.WriteLine("4: Delete Newest Customer from List");
+            Console.WriteLine("4: Delete Oldest Customer from List");
             Console.WriteLine("5: Update A Customer Sales Record");
             Console.WriteLine("6: Count of Current Records");
             Console.WriteLine("7: Exit");
@@ -57,7 +57,7 @@ namespace CustomerLinkedListApp
                 }
                 case 4:
                 {
-                    customerlist.PopCust();
+                    customerlist.DeleteStartList();
                     Console.WriteLine("Cust No.    Company     Contact     City    State    Last Purch Date.  Total Sales($)");
                     Console.WriteLine("-------------------------------------------------------------------------------------");
                     customerlist.DisplayList();

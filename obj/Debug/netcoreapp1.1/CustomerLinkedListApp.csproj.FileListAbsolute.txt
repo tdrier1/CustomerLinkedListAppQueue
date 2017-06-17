@@ -14,3 +14,11 @@ C:\Users\tdrie\Desktop\VSCodeProjects\CustomerLinkedListAppStack\bin\Debug\netco
 C:\Users\tdrie\Desktop\VSCodeProjects\CustomerLinkedListAppStack\obj\Debug\netcoreapp1.1\CustomerLinkedListApp.AssemblyInfo.cs
 C:\Users\tdrie\Desktop\VSCodeProjects\CustomerLinkedListAppStack\obj\Debug\netcoreapp1.1\CustomerLinkedListApp.dll
 C:\Users\tdrie\Desktop\VSCodeProjects\CustomerLinkedListAppStack\obj\Debug\netcoreapp1.1\CustomerLinkedListApp.pdb
+C:\Users\tdrie\Desktop\VSCodeProjects\CustomerLinkedListAppQueue\bin\Debug\netcoreapp1.1\CustomerLinkedListApp.deps.json
+C:\Users\tdrie\Desktop\VSCodeProjects\CustomerLinkedListAppQueue\bin\Debug\netcoreapp1.1\CustomerLinkedListApp.runtimeconfig.json
+C:\Users\tdrie\Desktop\VSCodeProjects\CustomerLinkedListAppQueue\bin\Debug\netcoreapp1.1\CustomerLinkedListApp.runtimeconfig.dev.json
+C:\Users\tdrie\Desktop\VSCodeProjects\CustomerLinkedListAppQueue\bin\Debug\netcoreapp1.1\CustomerLinkedListApp.dll
+C:\Users\tdrie\Desktop\VSCodeProjects\CustomerLinkedListAppQueue\bin\Debug\netcoreapp1.1\CustomerLinkedListApp.pdb
+C:\Users\tdrie\Desktop\VSCodeProjects\CustomerLinkedListAppQueue\obj\Debug\netcoreapp1.1\CustomerLinkedListApp.AssemblyInfo.cs
+C:\Users\tdrie\Desktop\VSCodeProjects\CustomerLinkedListAppQueue\obj\Debug\netcoreapp1.1\CustomerLinkedListApp.dll
+C:\Users\tdrie\Desktop\VSCodeProjects\CustomerLinkedListAppQueue\obj\Debug\netcoreapp1.1\CustomerLinkedListApp.pdb

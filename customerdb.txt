@@ -1,6 +1,6 @@
-501,Test,Stack,Gary,Ind,03/13/1999,90.09
 345,Orange,Danny,Miami,FL,N/A,0
 261,Jimbo,Sally,Holt,MI,5/20/2017,16.15
 322,Jimbo,Sally,Masgoon,MI,5/12/2001,4.11
 442,Gary,Hammel,Dansville,MI,3/11/2015,44.21
 114,Welton,Adam,Holt,MI,05/11/2013,30
+650,MVC,Aaron,Williamston,MI,06/15/2017,55.5
